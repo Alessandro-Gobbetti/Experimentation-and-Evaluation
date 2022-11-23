@@ -1,50 +1,92 @@
+import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.concurrent.Callable;
+import java.util.List;
+import java.util.Scanner;
 
 
 public class BubbleSortComparator<T extends Comparable<T>> {
 
-    // array of integers
-    public Integer[] intArray;
-    public Integer[] intSortedArray;
-    public Integer[] intReverseSortedArray;
-
-    // array of strings
-    private String[] stringArray;
-    private String[] stringSortedArray;
-    private String[] stringReverseSortedArray;
-
-
-
-    private void initIntArrays(final int length) {
-        intArray = new Integer[length];
+    // --------------------------------------------------------------------------------------------------------------------------------
+    // GENERATE ARRAYS
+    // --------------------------------------------------------------------------------------------------------------------------------
+    /**
+     * Generates a list of 3 integer arrays:
+     * 1. Randomly generated array;
+     * 2. Sorted array;
+     * 3. Reverse sorted array.
+     * @param length the number of elements in the array.
+     * @return a list of 3 integer arrays.
+     */
+    private List<Integer[]> createIntArrays(final int length) {
+        Integer[] intArray = new Integer[length];
         // initialize intArray with random numbers
         for (int i = 0; i < length; i++) {
             intArray[i] = (int) (Math.random() * 100);
         }
 
-        intSortedArray = Arrays.copyOf(intArray, intArray.length);
+        Integer[] intSortedArray = Arrays.copyOf(intArray, intArray.length);
         Arrays.sort(intSortedArray);
 
-        intReverseSortedArray = Arrays.copyOf(intSortedArray, intSortedArray.length);
+        Integer[] intReverseSortedArray = Arrays.copyOf(intSortedArray, intSortedArray.length);
         Collections.reverse(Arrays.asList(intReverseSortedArray));
+
+        // return a list of all arrays
+        return Arrays.asList(intArray, intSortedArray, intReverseSortedArray);
     }
 
 
-    private void initStringArrays(final int length, final int stringLength) {
-        stringArray = new String[length];
+    /**
+     * Generates a list of 3 string arrays:
+     * 1. Randomly generated array;
+     * 2. Sorted array;
+     * 3. Reverse sorted array.
+     * @param length the number of elements in the array.
+     * @return a list of 3 string arrays.
+     */
+    private List<Double[]> createDoubleArrays(final int length) {
+        Double[] doubleArray = new Double[length];
+        // initialize doubleArray with random numbers
+        for (int i = 0; i < length; i++) {
+            doubleArray[i] = Math.random() * 100;
+        }
+
+        Double[] doubleSortedArray = Arrays.copyOf(doubleArray, doubleArray.length);
+        Arrays.sort(doubleSortedArray);
+
+        Double[] doubleReverseSortedArray = Arrays.copyOf(doubleSortedArray, doubleSortedArray.length);
+        Collections.reverse(Arrays.asList(doubleReverseSortedArray));
+
+        // return a list of all arrays
+        return Arrays.asList(doubleArray, doubleSortedArray, doubleReverseSortedArray);
+    }
+
+
+    /**
+     * Generates a list of 3 string arrays:
+     * 1. Randomly generated array;
+     * 2. Sorted array;
+     * 3. Reverse sorted array .
+     * @param length the number of elements in the array.
+     * @return a list of 3 string arrays.
+     */
+    private List<String[]> createStringArrays(final int length, final int stringLength) {
+        String[] stringArray = new String[length];
         // initialize stringArray with random strings
         for (int i = 0; i < length; i++) {
             stringArray[i] = this.randomString(stringLength);
         }
 
-        stringSortedArray = Arrays.copyOf(stringArray, stringArray.length);
+        String[] stringSortedArray = Arrays.copyOf(stringArray, stringArray.length);
         Arrays.sort(stringSortedArray);
 
-        stringReverseSortedArray = Arrays.copyOf(stringSortedArray, stringSortedArray.length);
+        String[] stringReverseSortedArray = Arrays.copyOf(stringSortedArray, stringSortedArray.length);
         Collections.reverse(Arrays.asList(stringReverseSortedArray));
+
+        // return a list of all arrays
+        return Arrays.asList(stringArray, stringSortedArray, stringReverseSortedArray);
     }
 
 
@@ -63,7 +105,82 @@ public class BubbleSortComparator<T extends Comparable<T>> {
         return sb.toString();
     }
 
+
+    /**
+     * Generates a list of 3 DummySmallObject arrays:
+     * 1. Randomly generated array;
+     * 2. Sorted array;
+     * 3. Reverse sorted array.
+     * @param length the number of elements in the array.
+     * @return a list of 3 DummySmallObject arrays.
+     */
+    private List<DummySmallObject[]> createDummySmallObjectArrays(final int length) {
+        DummySmallObject[] dummySmallObjectArray = new DummySmallObject[length];
+        // initialize dummySmallObjectArray with random numbers
+        for (int i = 0; i < length; i++) {
+            dummySmallObjectArray[i] = new DummySmallObject((int) (Math.random() * 100));
+        }
+
+        DummySmallObject[] dummySmallObjectSortedArray = Arrays.copyOf(dummySmallObjectArray, dummySmallObjectArray.length);
+        Arrays.sort(dummySmallObjectSortedArray);
+
+        DummySmallObject[] dummySmallObjectReverseSortedArray = Arrays.copyOf(dummySmallObjectSortedArray, dummySmallObjectSortedArray.length);
+        Collections.reverse(Arrays.asList(dummySmallObjectReverseSortedArray));
+
+        // return a list of all arrays
+        return Arrays.asList(dummySmallObjectArray, dummySmallObjectSortedArray, dummySmallObjectReverseSortedArray);
+    }
+
+
+
+    /**
+     * Generates a list of 3 DummyLargeObject arrays:
+     * 1. Randomly generated array;
+     * 2. Sorted array;
+     * 3. Reverse sorted array.
+     * @param length the number of elements in the array.
+     * @return a list of 3 DummyLargeObject arrays.
+     */
+    private List<DummyLargeObject[]> createDummyLargeObjectArrays(final int length) {
+        DummyLargeObject[] dummyLargeObjectArray = new DummyLargeObject[length];
+        // initialize dummyLargeObjectArray with random DummySmallObjects
+        for (int i = 0; i < length; i++) {
+            int value = (int)(Math.random() * 100);
+            List<String> strings = new ArrayList<String>(Collections.nCopies(100, this.randomString(100)));
+            dummyLargeObjectArray[i] = new DummyLargeObject(value, strings);
+        }
+
+        DummyLargeObject[] dummyLargeObjectSortedArray = Arrays.copyOf(dummyLargeObjectArray, dummyLargeObjectArray.length);
+        Arrays.sort(dummyLargeObjectSortedArray);
+
+        DummyLargeObject[] dummyLargeObjectReverseSortedArray = Arrays.copyOf(dummyLargeObjectSortedArray, dummyLargeObjectSortedArray.length);
+        Collections.reverse(Arrays.asList(dummyLargeObjectReverseSortedArray));
+
+        // return a list of all arrays
+        return Arrays.asList(dummyLargeObjectArray, dummyLargeObjectSortedArray, dummyLargeObjectReverseSortedArray);
+    }
+
+
+
+
+
+
+
+
+    // --------------------------------------------------------------------------------------------------------------------------------
+    // MEASURE TIME
+    // --------------------------------------------------------------------------------------------------------------------------------
     
+    /**
+     * Measure the time it takes to sort an array given a Sorter algorithm and an array.
+     * The method will run the algorithm a warmUp number of times to warm up the JVM and then
+     * run it again a numberOfTimes times to measure the time. 
+     * @param sorter the sorter algorithm to use.
+     * @param items the array to sort.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param warmUp the number of times to run the algorithm before measuring the time.
+     * @return the average time it takes to sort the array.
+     */
     public double measureBubbleSortPassPerItem(Sorter<T> sorter, final T[] items, final int numberOfTimes, final int warmUp) {
 
         // skip the first few runs
@@ -95,14 +212,207 @@ public class BubbleSortComparator<T extends Comparable<T>> {
         return (double) (sortTotalTime) / numberOfTimes;
     }
 
+
+    /**
+     * The method creates 3 integer arrays (random, sorted, reverse sorted) and then
+     * measures the time it takes to sort the 3 arrays using 3 Sorting algorithms:
+     * 1. BubbleSortPassPerItem;
+     * 2. BubbleSortUntilNoChange;
+     * 3. BubbleSortWhileNeeded.
+     * The method will run the algorithms a warmUp number of times to warm up the JVM and then
+     * run them again a numberOfTimes times to measure the time.
+     * The results will be saved in a given CSV file.
+     * @param length the number of elements in each array.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param skipFirstN the number of times to run the algorithm before measuring the time.
+     * @param filename the name of the CSV file to save the results.
+     */
+    public static void compareWithInteger(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
+        BubbleSortComparator<Integer> intComp = new BubbleSortComparator<Integer>();
+
+        // algorithm to be tested
+        Sorter<Integer> sorter1 = new BubbleSortPassPerItem<Integer>();
+        Sorter<Integer> sorter2 = new BubbleSortUntilNoChange<Integer>();
+        Sorter<Integer> sorter3 = new BubbleSortWhileNeeded<Integer>();
+        List<Sorter<Integer>> sorters = new ArrayList<Sorter<Integer>>(List.of(sorter1, sorter2, sorter3));
+
+        // initialize the arrays
+        List<Integer[]> arrays = intComp.createIntArrays(length);
+
+        for (Sorter<Integer> sorter : sorters) {
+            for (int i = 0; i < arrays.size(); i++) {
+                double time = intComp.measureBubbleSortPassPerItem(sorter, arrays.get(i), numberOfTimes, skipFirstN);
+                logToCSV(filename, sorter.getClass().getSimpleName(), "Integer", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+            }
+        }
+    }
+
+    /**
+     * The method creates 3 arrays of doubles (random, sorted, reverse sorted) and then
+     * measures the time it takes to sort the 3 arrays using 3 Sorting algorithms:
+     * 1. BubbleSortPassPerItem;
+     * 2. BubbleSortUntilNoChange;
+     * 3. BubbleSortWhileNeeded.
+     * The method will run the algorithms a warmUp number of times to warm up the JVM and then
+     * run them again a numberOfTimes times to measure the time.
+     * The results will be saved in a given CSV file.
+     * @param length the number of elements in each array.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param skipFirstN the number of times to run the algorithm before measuring the time.
+     * @param filename the name of the CSV file to save the results.
+     */
+    public static void compareWithDouble(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
+        BubbleSortComparator<Double> doubleComp = new BubbleSortComparator<Double>();
+
+        // algorithm to be tested
+        Sorter<Double> sorter1 = new BubbleSortPassPerItem<Double>();
+        Sorter<Double> sorter2 = new BubbleSortUntilNoChange<Double>();
+        Sorter<Double> sorter3 = new BubbleSortWhileNeeded<Double>();
+        List<Sorter<Double>> sorters = new ArrayList<Sorter<Double>>(List.of(sorter1, sorter2, sorter3));
+
+        // initialize the arrays
+        List<Double[]> arrays = doubleComp.createDoubleArrays(length);
+
+        for (Sorter<Double> sorter : sorters) {
+            for (int i = 0; i < arrays.size(); i++) {
+                double time = doubleComp.measureBubbleSortPassPerItem(sorter, arrays.get(i), numberOfTimes, skipFirstN);
+                logToCSV(filename, sorter.getClass().getSimpleName(), "Double", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+            }
+        }
+    }
+
+
+    /**
+     * The method creates 3 arrays of strings of a given length (random, sorted, reverse sorted) and then
+     * measures the time it takes to sort the 3 arrays using 3 Sorting algorithms:
+     * 1. BubbleSortPassPerItem;
+     * 2. BubbleSortUntilNoChange;
+     * 3. BubbleSortWhileNeeded.
+     * The method will run the algorithms a warmUp number of times to warm up the JVM and then
+     * run them again a numberOfTimes times to measure the time.
+     * The results will be saved in a given CSV file.
+     * @param length the number of elements in each array.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param skipFirstN the number of times to run the algorithm before measuring the time.
+     * @param filename the name of the CSV file to save the results.
+     * @param stringLength the length of the strings in the array.
+     */
+    public static void compareWithString(final int length, final int numberOfTimes, final int skipFirstN, final String filename, final int stringLength) {
+        BubbleSortComparator<String> strComp = new BubbleSortComparator<String>();
+
+        // algorithm to be tested
+        Sorter<String> sorter1 = new BubbleSortPassPerItem<String>();
+        Sorter<String> sorter2 = new BubbleSortUntilNoChange<String>();
+        Sorter<String> sorter3 = new BubbleSortWhileNeeded<String>();
+        List<Sorter<String>> sorters = new ArrayList<Sorter<String>>(List.of(sorter1, sorter2, sorter3));
+
+        // initialize the arrays
+        List<String[]> arrays = strComp.createStringArrays(length, stringLength);
+
+        for (Sorter<String> sorter : sorters) {
+            for (int i = 0; i < arrays.size(); i++) {
+                double time = strComp.measureBubbleSortPassPerItem(sorter, arrays.get(i), numberOfTimes, skipFirstN);
+                logToCSV(filename, sorter.getClass().getSimpleName(), "String", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+            }
+        }
+    }
+
+    /**
+     * The method creates 3 arrays of DummySmallObjects (random, sorted, reverse sorted) and then
+     * measures the time it takes to sort the 3 arrays using 3 Sorting algorithms:
+     * 1. BubbleSortPassPerItem;
+     * 2. BubbleSortUntilNoChange;
+     * 3. BubbleSortWhileNeeded.
+     * The method will run the algorithms a warmUp number of times to warm up the JVM and then
+     * run them again a numberOfTimes times to measure the time.
+     * The results will be saved in a given CSV file.
+     * @param length the number of elements in each array.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param skipFirstN the number of times to run the algorithm before measuring the time.
+     * @param filename the name of the CSV file to save the results.
+     */
+    public static void compareWithDummySmallObject(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
+        BubbleSortComparator<DummySmallObject> dsoComp = new BubbleSortComparator<DummySmallObject>();
+
+        // algorithm to be tested
+        Sorter<DummySmallObject> sorter1 = new BubbleSortPassPerItem<DummySmallObject>();
+        Sorter<DummySmallObject> sorter2 = new BubbleSortUntilNoChange<DummySmallObject>();
+        Sorter<DummySmallObject> sorter3 = new BubbleSortWhileNeeded<DummySmallObject>();
+        List<Sorter<DummySmallObject>> sorters = new ArrayList<Sorter<DummySmallObject>>(List.of(sorter1, sorter2, sorter3));
+
+        // initialize the arrays
+        List<DummySmallObject[]> arrays = dsoComp.createDummySmallObjectArrays(length);
+
+        for (Sorter<DummySmallObject> sorter : sorters) {
+            for (int i = 0; i < arrays.size(); i++) {
+                double time = dsoComp.measureBubbleSortPassPerItem(sorter, arrays.get(i), numberOfTimes, skipFirstN);
+                logToCSV(filename, sorter.getClass().getSimpleName(), "DummySmallObject", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+            }
+        }
+    }
+
+    /**
+     * The method creates 3 arrays of DummyLargeObjects (random, sorted, reverse sorted) and then
+     * measures the time it takes to sort the 3 arrays using 3 Sorting algorithms:
+     * 1. BubbleSortPassPerItem;
+     * 2. BubbleSortUntilNoChange;
+     * 3. BubbleSortWhileNeeded.
+     * The method will run the algorithms a warmUp number of times to warm up the JVM and then
+     * run them again a numberOfTimes times to measure the time.
+     * The results will be saved in a given CSV file.
+     * @param length the number of elements in each array.
+     * @param numberOfTimes the number of times to run the algorithm.
+     * @param skipFirstN the number of times to run the algorithm before measuring the time.
+     * @param filename the name of the CSV file to save the results.
+     */
+    public static void compareWithDummyLargeObject(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
+        BubbleSortComparator<DummyLargeObject> dloComp = new BubbleSortComparator<DummyLargeObject>();
+
+        // algorithm to be tested
+        Sorter<DummyLargeObject> sorter1 = new BubbleSortPassPerItem<DummyLargeObject>();
+        Sorter<DummyLargeObject> sorter2 = new BubbleSortUntilNoChange<DummyLargeObject>();
+        Sorter<DummyLargeObject> sorter3 = new BubbleSortWhileNeeded<DummyLargeObject>();
+        List<Sorter<DummyLargeObject>> sorters = new ArrayList<Sorter<DummyLargeObject>>(List.of(sorter1, sorter2, sorter3));
+
+        // initialize the arrays
+        List<DummyLargeObject[]> arrays = dloComp.createDummyLargeObjectArrays(length);
+
+        for (Sorter<DummyLargeObject> sorter : sorters) {
+            for (int i = 0; i < arrays.size(); i++) {
+                double time = dloComp.measureBubbleSortPassPerItem(sorter, arrays.get(i), numberOfTimes, skipFirstN);
+                logToCSV(filename, sorter.getClass().getSimpleName(), "DummyLargeObject", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+            }
+        }
+    }
+
+
+
+    // --------------------------------------------------------------------------------------------------------------------------------
+    // LOGGING
+    // --------------------------------------------------------------------------------------------------------------------------------
+
     private void printAsCSV(final String sortingAlgo, final String type, final String arr, final int arraySize, final double time) {
         System.out.println(sortingAlgo + "," + type + "," + arr + "," + arraySize + "," + time);
     }
 
+    /**
+     * The method logs the results of the sorting algorithm to a CSV file.
+     * @param file the name of the CSV file to save the results.
+     * @param sortingAlgo the name of the sorting algorithm.
+     * @param type the type of the array.
+     * @param arr the type of the array (random, sorted, reverse sorted).
+     * @param arraySize the size of the array.
+     * @param time the time it took to sort the array.
+     */
     private static void logToCSV(final String file, final String sortingAlgo, final String type, final String arr, final int arraySize, final double time) {
         logToCSV(file, sortingAlgo + "," + type + "," + arr + "," + arraySize + "," + time);
     }
 
+    /**
+     * The method logs the results of the sorting algorithm to a CSV file.
+     * @param file the name of the CSV file to save the results.
+     * @param str the line to be logged.
+     */
     private static void logToCSV(final String file, final String str) {
         try {
             final FileWriter fw = new FileWriter(file, true);
@@ -113,164 +423,89 @@ public class BubbleSortComparator<T extends Comparable<T>> {
         }
     }
 
-    public static void compareWithInteger(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
-        BubbleSortComparator<Integer> intComp = new BubbleSortComparator<Integer>();
 
-        // algorithm to be tested
-        BubbleSortPassPerItem<Integer> sorter1 = new BubbleSortPassPerItem<Integer>();
-        BubbleSortUntilNoChange<Integer> sorter2 = new BubbleSortUntilNoChange<Integer>();
-        BubbleSortWhileNeeded<Integer> sorter3 = new BubbleSortWhileNeeded<Integer>();
-
-        // initialize the arrays
-        intComp.initIntArrays(length);
-
-        Sorter<Integer>[] sorters =  new Sorter[] {sorter1, sorter2, sorter3};
-        Integer[][] arrays = new Integer[][] {intComp.intArray, intComp.intSortedArray, intComp.intReverseSortedArray};
-
-        for (Sorter<Integer> sorter : sorters) {
-            for (int i = 0; i < arrays.length; i++) {
-                double time = intComp.measureBubbleSortPassPerItem(sorter, arrays[i], numberOfTimes, skipFirstN);
-                logToCSV(filename, sorter.getClass().getSimpleName(), "Integer", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
-                // intComp.printAsCSV(sorter.getClass().getSimpleName(), "Integer", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
+    private static void initCSV(final String file) {
+        // check if file exists and it is not empty
+        File f = new File(file);
+        if (f.exists() && f.length() > 0) {
+            // ask user if he wants to overwrite the file
+            System.out.print("\033[0;31m" + "File " + file + " already exists. Do you want to overwrite it? [y/(n)]: "+"\033[0m");
+            try (Scanner sc = new Scanner(System.in)) { // wait for user response
+                String answer = sc.nextLine();
+                if (answer.equals("y") || answer.equals("Y")) {
+                    System.out.println("\r\033[F\r\033[2K\rOverwriting file " + file + "...");
+                    // delete the file
+                    f.delete();
+                    // recreate the file and write the header
+                    logToCSV(file, "Algorithm,Type,Array,Size,Time");
+                } else {
+                    // exit program
+                    System.out.println("Exiting program...");
+                    System.exit(0);
+                }
+            } catch (Exception e) {
+                System.err.println("Error reading from console: " + e.getMessage());
             }
+        } else {
+            // create file and write header
+            logToCSV(file, "sortingAlgo,type,arr,arraySize,time");
         }
     }
 
 
 
-    public static void compareWithString(final int length, final int numberOfTimes, final int skipFirstN, final String filename) {
-        BubbleSortComparator<String> strComp = new BubbleSortComparator<String>();
-
-        // algorithm to be tested
-        BubbleSortPassPerItem<String> sorter1 = new BubbleSortPassPerItem<String>();
-        BubbleSortUntilNoChange<String> sorter2 = new BubbleSortUntilNoChange<String>();
-        BubbleSortWhileNeeded<String> sorter3 = new BubbleSortWhileNeeded<String>();
-
-        // initialize the arrays
-        strComp.initStringArrays(length, 10);
-
-        Sorter<String>[] sorters =  new Sorter[] {sorter1, sorter2, sorter3};
-        String[][] arrays = new String[][] {strComp.stringArray, strComp.stringSortedArray, strComp.stringReverseSortedArray};
-
-        for (Sorter<String> sorter : sorters) {
-            for (int i = 0; i < arrays.length; i++) {
-                double time = strComp.measureBubbleSortPassPerItem(sorter, arrays[i], numberOfTimes, skipFirstN);
-                logToCSV(filename, sorter.getClass().getSimpleName(), "String", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
-                // strComp.printAsCSV(sorter.getClass().getSimpleName(), "String", i == 0 ? "random" : i == 1 ? "sorted" : "reverse", length, time);
-            }
-        }
-    }
-
-
+    // --------------------------------------------------------------------------------------------------------------------------------
+    // MAIN
+    // --------------------------------------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
 
         final int N_TIMES = 1000;
         final int SKIP_FIRST_N = 100;
-        final String FILE = "results.csv";
+        // read the filename from the arguments or use the default one
+        final String FILE = args.length > 0 ? args[0] : "results.csv";
+        Integer[] sizes = new Integer[] {10, 100, 1000, 10000};
 
         // print the header
-        // System.out.println("Algorithm,Type,Array,Size,Time");
-        logToCSV(FILE, "Algorithm,Type,Array,Size,Time");
-        //
+        initCSV(FILE);
 
         // compare the algorithms with integer arrays
-        Integer[] sizes = new Integer[] {10, 100, 1000, 10000};
+        System.out.print("Comparing algorithms with Integer arrays: ");
         for (Integer size : sizes) {
+            System.out.print(size + " ");
             compareWithInteger(size, N_TIMES, SKIP_FIRST_N, FILE);
         }
 
-        // compare the algorithms with string arrays
+        // compare the algorithms with double arrays
+        System.out.print("\r\033[2K\rComparing algorithms with Double arrays: ");
         for (Integer size : sizes) {
-            compareWithString(size, N_TIMES, SKIP_FIRST_N, FILE);
+            System.out.print(size + " ");
+            compareWithDouble(size, N_TIMES, SKIP_FIRST_N, FILE);
+        }
+
+        // compare the algorithms with string arrays
+        System.out.print("\r\033[2K\rComparing algorithms with String arrays: ");
+        for (Integer size : sizes) {
+            System.out.print(size + " ");
+            compareWithString(size, N_TIMES, SKIP_FIRST_N, FILE, 10);
+        }
+
+        // compare the algorithms with dummy small object arrays
+        System.out.print("\r\033[2K\rComparing algorithms with DummySmallObject arrays: ");
+        for (Integer size : sizes) {
+            System.out.print(size + " ");
+            compareWithDummySmallObject(size, N_TIMES, SKIP_FIRST_N, FILE);
+        }
+
+        // compare the algorithms with dummy large object arrays
+        System.out.print("\r\033[2K\rComparing algorithms with DummyLargeObject arrays: ");
+        for (Integer size : sizes) {
+            System.out.print(size + " ");
+            compareWithDummyLargeObject(size, N_TIMES, SKIP_FIRST_N, FILE);
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // BubbleSortPassPerItem<Integer> intSorter = new BubbleSortPassPerItem<Integer>();
-        // BubbleSortUntilNoChange<Integer> intSorter2 = new BubbleSortUntilNoChange<Integer>();
-        // BubbleSortWhileNeeded<Integer> intSorter3 = new BubbleSortWhileNeeded<Integer>();
-
-        // // test the int array
-        // intCmop.initIntArrays(1000);
-
-        // BubbleSortComparator.compareWithInteger(100, 100, 10);
-        
-
-
-
-        // BubbleSortComparator<String> stringCmop = new BubbleSortComparator<String>();
-        // BubbleSortPassPerItem<String> stringSorter = new BubbleSortPassPerItem<String>();
-        // BubbleSortUntilNoChange<String> stringSorter2 = new BubbleSortUntilNoChange<String>();
-        // BubbleSortWhileNeeded<String> stringSorter3 = new BubbleSortWhileNeeded<String>();
-
-        // // test the string array
-        // stringCmop.initStringArrays(1000, 5, 10);
-
-        // double resultString = stringCmop.measureBubbleSortPassPerItem(stringSorter, stringCmop.stringArray, 1000, 100);
-        // System.out.println("The average time for 1000 string items is " + resultString + " nanoseconds");
-        // double resultStringSorted = stringCmop.measureBubbleSortPassPerItem(stringSorter, stringCmop.stringSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 sorted string items is " + resultStringSorted + " nanoseconds");
-        // double resultStringReverseSorted = stringCmop.measureBubbleSortPassPerItem(stringSorter, stringCmop.stringReverseSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 reverse sorted string items is " + resultStringReverseSorted + " nanoseconds");
-
-        // double resultString2 = stringCmop.measureBubbleSortPassPerItem(stringSorter2, stringCmop.stringArray, 1000, 100);
-        // System.out.println("The average time for 1000 string items is " + resultString2 + " nanoseconds");
-        // double resultStringSorted2 = stringCmop.measureBubbleSortPassPerItem(stringSorter2, stringCmop.stringSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 sorted string items is " + resultStringSorted2 + " nanoseconds");
-        // double resultStringReverseSorted2 = stringCmop.measureBubbleSortPassPerItem(stringSorter2, stringCmop.stringReverseSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 reverse sorted string items is " + resultStringReverseSorted2 + " nanoseconds");
-
-        // double resultString3 = stringCmop.measureBubbleSortPassPerItem(stringSorter3, stringCmop.stringArray, 1000, 100);
-        // System.out.println("The average time for 1000 string items is " + resultString3 + " nanoseconds");
-        // double resultStringSorted3 = stringCmop.measureBubbleSortPassPerItem(stringSorter3, stringCmop.stringSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 sorted string items is " + resultStringSorted3 + " nanoseconds");
-        // double resultStringReverseSorted3 = stringCmop.measureBubbleSortPassPerItem(stringSorter3, stringCmop.stringReverseSortedArray, 1000, 100);
-        // System.out.println("The average time for 1000 reverse sorted string items is " + resultStringReverseSorted3 + " nanoseconds");
-
-
-
-
-
-
-
-
-
-        // Array of integers
-        // Array of strings
-        // Array of doubles
-        // Array of objects (small objects)
-        // Array of objects (large objects)
-        // Array of duplicates (like an array of 1s or 2s)
-
-        // for each of the above we can start with:
-        // 1. Random array
-        // 2. Sorted array
-        // 3. Reverse sorted array
-
-
+        System.out.println("\r\033[2K\r\033[0;32m[✓] Done!\033[0m Results in " + "\033[0;34m" + FILE + "\033[0m");
     }
 }
+

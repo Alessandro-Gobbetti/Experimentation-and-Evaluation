@@ -1,8 +1,12 @@
-public class DummySmallObject {
+public class DummySmallObject implements Comparable<DummySmallObject> {
+
     private int value;
+    
     public DummySmallObject(int value) {
         this.value = value;
     }
+
+    
     public int getValue() {
         return value;
     }
@@ -10,7 +14,7 @@ public class DummySmallObject {
         this.value = value;
     }
     
-    // implement a method that allows me to use > < == operators between two objects
+    @Override
     public int compareTo(DummySmallObject o) {
         if (this.value > o.value) {
             return 1;
