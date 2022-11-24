@@ -21,7 +21,8 @@ for array in array_types:
         # plot
         for algo in algo_types:
             plt.plot(data_to_plot[data_to_plot['Algorithm'] == algo]["Size"], data_to_plot[data_to_plot['Algorithm'] == algo]["Time"], label=algo)
-
+            # TODO: compute minimum, first quartile, median, third quartile, maximum
+        
         plt.xscale('log')
         plt.yscale('log')
 
