@@ -36,7 +36,7 @@ The output file will contain the execution time of each sorting algorithm for ea
 
 Note that the experiment will take a long time to run. It is recommended to run it overnight.
 
-For more information about the java code, please read the javadoc report: [`Assignment1/javadoc/index.html`](Assignment1/javadoc/index.html).
+For more information about the java code, please read the [javadoc report](https://alessandro-gobbetti.github.io/Experimentation-and-Evaluation/BubbleSortComparator.html).
 
 ### Generating the plots
 Once the experiment has been run, you can generate the plots by navigating to the [`Assignment1/plotting`](`Assignment1/plotting`) directory and running the following command:
