@@ -1,4 +1,4 @@
-# Experimentation-and-Evaluation
+# Experimentation and Evaluation
 ## Measuring execution time of sorting algorithms
 
 In this experiment, three sorting algorithms from the company Bubble Inc. are tested in order to find the fastest one.
