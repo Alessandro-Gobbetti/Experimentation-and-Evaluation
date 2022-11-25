@@ -8,10 +8,7 @@ import java.util.Scanner;
 
 /**
  * This class is used to compare the performance of the three sorting algorithms:
- *  - BubbleSortPassPerItem;
- *  - BubbleSortUntilNoChange;
- *  - BubbleSortWhileNeeded.
- * 
+ * BubbleSortPassPerItem, BubbleSortUntilNoChange and BubbleSortWhileNeeded.
  * @author Alessandro Gobbetti, Bojan Lazarevski
  */
 public class BubbleSortComparator<T extends Comparable<T>> {
@@ -457,6 +454,8 @@ public class BubbleSortComparator<T extends Comparable<T>> {
             logToCSV(file, "sortingAlgo,type,arr,arraySize,time");
         }
     }
+    // commandline command to generate javadoc documentation
+    // javadoc -d docs -sourcepath src -subpackages . -exclude com.company.Main
 
 
 
@@ -464,6 +463,22 @@ public class BubbleSortComparator<T extends Comparable<T>> {
     // MAIN
     // --------------------------------------------------------------------------------------------------------------------------------
 
+    /**
+     * The main method runs the sorting algorithms on different arrays of different sizes.
+     * The results are saved in a CSV file. The file path can be passed as a command line argument.
+     * If no file path is passed, the results will be saved in the file "./results.csv".
+     * 
+     * The program will run the algorithms 100 number of times to warm up the JVM and then
+     * run them again a 1000 times to measure the time.
+     * 
+     * The program will run the algorithms on arrays of size 100, 1000, 10000, 100000.
+     * 
+     * The program will run the algorithms on arrays of type Integer, Double, String, DummySmallObject, DummyLargeObject.
+     * 
+     * The program will run the algorithms on random, sorted and reverse sorted arrays.
+     * 
+     * @param args the command line arguments.
+     */
     public static void main(String[] args) {
 
         final int N_TIMES = 1000;
