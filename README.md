@@ -28,7 +28,7 @@ javac *.java
 Then, you can run the experiment by running the following command:
 
 ```bash
-java BubbleSortComparator <output_file.csv>
+java BubbleSortComparator output_file.csv
 ```
 
 If the output file already exists, it will asked if you want to overwrite it.
