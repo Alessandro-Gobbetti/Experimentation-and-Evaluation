@@ -454,9 +454,6 @@ public class BubbleSortComparator<T extends Comparable<T>> {
             logToCSV(file, "sortingAlgo,type,arr,arraySize,time");
         }
     }
-    // commandline command to generate javadoc documentation
-    // javadoc -d docs -sourcepath src -subpackages . -exclude com.company.Main
-
 
 
     // --------------------------------------------------------------------------------------------------------------------------------
