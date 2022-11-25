@@ -19,7 +19,7 @@ The experiment can be replicated by following these steps:
 
 ### Running the experiment
 
-First, you need to compile all the java files. To do so navigate to the `Assignment1` folder and run the following command:
+First, you need to compile all the java files. To do so navigate to the [`Assignment1`](`Assignment1`) folder and run the following command:
 
 ```bash
 javac *.java
@@ -36,10 +36,10 @@ The output file will contain the execution time of each sorting algorithm for ea
 
 Note that the experiment will take a long time to run. It is recommended to run it overnight.
 
-For more information about the java code, please read the javadoc report: `Assignment1/javadoc/index.html`.
+For more information about the java code, please read the javadoc report: [`Assignment1/javadoc/index.html`](Assignment1/javadoc/index.html).
 
 ### Generating the plots
-Once the experiment has been run, you can generate the plots by navigating to the `Assignment1/plotting` directory and running the following command:
+Once the experiment has been run, you can generate the plots by navigating to the [`Assignment1/plotting`](`Assignment1/plotting`) directory and running the following command:
 
 ```bash
 python plot.py input_file.csv output_file.csv output/directory/
