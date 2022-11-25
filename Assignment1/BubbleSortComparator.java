@@ -6,7 +6,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-
+/**
+ * This class is used to compare the performance of the three sorting algorithms:
+ *  - BubbleSortPassPerItem;
+ *  - BubbleSortUntilNoChange;
+ *  - BubbleSortWhileNeeded.
+ * 
+ * @author Alessandro Gobbetti, Bojan Lazarevski
+ */
 public class BubbleSortComparator<T extends Comparable<T>> {
 
     // --------------------------------------------------------------------------------------------------------------------------------
@@ -391,10 +398,6 @@ public class BubbleSortComparator<T extends Comparable<T>> {
     // LOGGING
     // --------------------------------------------------------------------------------------------------------------------------------
 
-    private void printAsCSV(final String sortingAlgo, final String type, final String arr, final int arraySize, final double time) {
-        System.out.println(sortingAlgo + "," + type + "," + arr + "," + arraySize + "," + time);
-    }
-
     /**
      * The method logs the results of the sorting algorithm to a CSV file.
      * @param file the name of the CSV file to save the results.
@@ -423,7 +426,10 @@ public class BubbleSortComparator<T extends Comparable<T>> {
         }
     }
 
-
+    /**
+     * The method initializes the CSV file with the header.
+     * @param file the name of the CSV file to save the results.
+     */
     private static void initCSV(final String file) {
         // check if file exists and it is not empty
         File f = new File(file);
