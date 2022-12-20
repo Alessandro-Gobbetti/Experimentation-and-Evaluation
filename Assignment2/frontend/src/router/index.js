@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
+  // {
+  //   path: '/Experimentation-and-Evaluation/',
+  //   name: 'home',
+  //   meta: { title: 'Homepage' },
+  //   component: () => import(/* webpackChunkName: "home" */ '@/views/Homepage.vue')
+  // },
   {
-    path: '/',
-    name: 'home',
-    meta: { title: 'Homepage' },
-    component: () => import(/* webpackChunkName: "home" */ '@/views/Homepage.vue')
-  },
-  {
-    path: '/quiz',
+    path: '/Experimentation-and-Evaluation/',
     name: 'quiz',
     meta: { title: 'Quiz' },
     component: () => import(/* webpackChunkName: "quiz" */ '@/views/QuizPage.vue')

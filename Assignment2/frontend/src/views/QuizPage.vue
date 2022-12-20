@@ -2,30 +2,46 @@
   <div class="w-100 align-center text-center body">
     <div
       v-if="currentQuestion === 0"
-      class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
+      class="h-100 w-100 align-center text-center d-flex flex-column mt-16"
     >
-      <h1>The Experiment</h1>
-      <p class="w-50 text mb-2">
+      <h1 class="cap">The Experiment</h1>
+      <p class="w-50 text mb-2 mt-2">
         The aim of this experiment is to evaluate the readability of
-        <b>camelCase</b> and <b>kebab-case</b> coding styles.
+        <b>camelCase</b> and <b>kebab-case</b> coding styles. Please,
+        <b>read the following instructions carefully </b>before starting the experiment.
       </p>
 
+      <!-- quick explanation on camelCase and kebab-case -->
+      <h2 class="w-50 cap" style="text-align: justify; margin-left: -2rem">The topic</h2>
       <p class="w-50 text mb-2">
-        You will be asked <b>{{ this.questions.length }} questions </b> and you will have
-        to choose the correct one as fast as you can, but without making mistakes. We will
-        <b>measure the time</b> you need to answer each question.
+        CamelCase and kebab-case are two different naming conventions used for variables
+        functions, and other identifiers in programming languages. <br />
+        A camelCase identifier is a compound word or phrase in which each word or
+        abbreviation begins with a capital letter, with no intervening spaces or
+        punctuation, such as <code> myCamelCaseIdentifier</code>. <br />
+
+        A kebab-case identifier, instead, is a compound word or phrase in which each word
+        or abbreviation is separated by a hyphen, with no intervening spaces or
+        punctuation, such as <code>my-kebab-case-identifier</code>.
+      </p>
+
+      <h2 class="w-50 cap" style="text-align: justify; margin-left: -2rem">The Quiz</h2>
+      <p class="w-50 text mb-2">
+        You will be asked to fill one form with some general information about you, then
+        you will be asked to answer <b>{{ this.questions.length }} questions </b>.
       </p>
 
       <p class="w-50 text mb-2">
         At the beginning a short phrase is shown to you, then, when you are ready, you can
         proceed to the quesiton: 4 answers are shown to you, you have to choose the
-        correct one (only one is correct).
+        correct one (only one is correct) <b>as fast as possible</b>, but without making
+        mistakes.
       </p>
 
       <p class="w-50 text mb-2">
         Since the results depend on your performance, we kindly ask you to focus during
-        the experiment and avoid any external distractions. For a better experience, we
-        recommend you to use a desktop computer.
+        the experiment and <b>avoid any external distractions</b>. For a better
+        experience, we recommend you to use a desktop computer.
       </p>
 
       <p class="w-50 text mb-2">
@@ -33,7 +49,7 @@
         see a chart with the time you needed to answer each question.
       </p>
 
-      <v-btn variant="tonal" color="blue" @click="this.currentQuestion = -2">
+      <v-btn class="ma-8" variant="tonal" color="blue" @click="this.currentQuestion = -2">
         Start tutorial
       </v-btn>
     </div>
@@ -44,17 +60,17 @@
       class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
     >
       <div v-if="!is_question && !is_countdown">
-        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <h1 class="mb-8 cap">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
         <v-btn variant="tonal" color="blue" @click="countdown()"> Answer </v-btn>
       </div>
 
       <div v-else-if="is_countdown">
-        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <h1 class="mb-8 cap">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
         <h1 class="mb-8">{{ currentTime }}</h1>
       </div>
 
       <div v-else>
-        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <h1 class="mb-8 cap">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
         <!-- grid 2 by 2 -->
         <div class="grid mb-8">
           <v-btn
@@ -98,7 +114,8 @@
             tutorial[Math.abs(currentQuestion) - 1].time !== 0 && currentQuestion == -1
           "
           variant="tonal"
-          color="blue"
+          size="x-large"
+          color="black"
           @click="
             this.is_question = false;
             this.currentQuestion = 1;
@@ -115,7 +132,7 @@
       v-else-if="currentQuestion == 1"
       class="h-100 w-100 align-center text-left d-flex flex-column mt-8"
     >
-      <h1 class="mb-8">About you!</h1>
+      <h1 class="cap">About you!</h1>
       <div class="mb-8 w-50">
         <h2>Gender:</h2>
         <v-radio-group v-model="user_info.gender" row class="">
@@ -237,15 +254,15 @@
       class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
     >
       <div v-if="!is_question && !is_countdown">
-        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
+        <h1 class="mb-8 cap">{{ questions[currentQuestion - 2].question }}</h1>
         <v-btn variant="tonal" color="blue" @click="countdown()"> Answer </v-btn>
       </div>
       <div v-else-if="is_countdown">
-        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
+        <h1 class="mb-8 cap">{{ questions[currentQuestion - 2].question }}</h1>
         <h1 class="mb-8">{{ currentTime }}</h1>
       </div>
       <div v-else>
-        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
+        <h1 class="mb-8 cap">{{ questions[currentQuestion - 2].question }}</h1>
         <!-- grid 2 by 2 -->
         <div class="grid mb-8">
           <v-btn
@@ -281,22 +298,23 @@
       </div>
     </div>
 
-    <div v-else class="mx-16 mt-16 w-75 mx-auto">
-      <h1>Quiz completed!</h1>
+    <div v-else class="mx-16 mt-16 w-50 mx-auto">
+      <h1 class="mb-8">Quiz completed!</h1>
       <p class="text">
-        You have completed the quiz. You have answered {{ countCorrect() }} out of
-        {{ questions.length }} questions correctly.
+        You have succesfully completed the quiz! Thank you for your participation.
       </p>
+
       <p class="text">
-        You have answered the questions in an average time of
-        {{ getAverageTime() }} seconds.
+        You have answered
+        <b>{{ countCorrect() }} out of {{ questions.length }}</b> questions correctly,
+        with an average time of <b>{{ getAverageTime() }}</b> seconds.
       </p>
-      <p class="text">
+      <p class="text mt-6">
         In the following chart you can see the time you needed to answer each question.
         The green bar represents the correct answers, the red bar represents the wrong
         ones.
       </p>
-      <BarChart :data="getChartData()" class="w-75 h-75 mx-auto" />
+      <BarChart :data="getChartData()" class="mt-16 w-100 mx-auto" />
     </div>
   </div>
 </template>
@@ -417,6 +435,64 @@ export default defineComponent({
         time: 0,
         is_kebab: false,
       },
+      {
+        question: "do not use",
+        answers: ["doNotUse", "doNotUze", "doNodUse", "doMotUse"],
+        correct_answer: "doNotUse",
+        correct: false,
+        time: 0,
+        is_kebab: false,
+      },
+      {
+        question: "do not use",
+        answers: ["do-not-use", "do-not-uze", "do-nod-use", "do-mot-use"],
+        correct_answer: "do-not-use",
+        correct: false,
+        time: 0,
+        is_kebab: true,
+      },
+      {
+        question: "do something now",
+        answers: ["doSomethingNow", "doSomethinNow", "doSomethinNaw", "doSomethinNoww"],
+        correct_answer: "doSomethingNow",
+        correct: false,
+        time: 0,
+        is_kebab: false,
+      },
+      {
+        question: "do something now",
+        answers: [
+          "do-something-now",
+          "do-somethin-now",
+          "do-somethin-naw",
+          "do-somethin-noww",
+        ],
+        correct_answer: "do-something-now",
+        correct: false,
+        time: 0,
+        is_kebab: true,
+      },
+      {
+        question: "if you want to",
+        answers: ["ifYouWantTo", "ifYouWontTo", "ifYouWontToo", "ifVouWantTo"],
+        correct_answer: "ifYouWantTo",
+        correct: false,
+        time: 0,
+        is_kebab: false,
+      },
+      {
+        question: "if you want to",
+        answers: [
+          "if-you-want-to",
+          "if-you-wont-to",
+          "if-you-wont-too",
+          "if-vou-want-to",
+        ],
+        correct_answer: "if-you-want-to",
+        correct: false,
+        time: 0,
+        is_kebab: true,
+      },
     ],
     currentQuestion: 0,
     is_question: false,
@@ -519,7 +595,7 @@ export default defineComponent({
       // reset timer
       this.resetTimer();
       // next question or end
-      if (this.currentQuestion >= this.questions.length) {
+      if (this.currentQuestion > this.questions.length) {
         this.submitQuiz();
       }
     },
@@ -548,7 +624,7 @@ export default defineComponent({
           process.env.TEMPLATE_ID,
           {
             user_info: JSON.stringify(this.user_info, null, 2),
-            questions: JSON.stringify(this.questionsToJSON, null, 2),
+            questions: JSON.stringify(this.questionsToJSON(), null, 2),
           },
           process.env.USER_ID
         )
@@ -625,6 +701,7 @@ export default defineComponent({
 .text {
   text-align: justify;
   text-justify: inter-word;
+  font-size: 1.2rem;
 }
 
 .grid {
@@ -638,10 +715,19 @@ export default defineComponent({
   font-size: 3rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+h2.cap {
+  font-size: 2rem;
 }
 
 .pt-20 {
   padding-top: 20vh;
+}
+
+.cap {
+  font-variant: small-caps;
+  text-transform: capitalize;
 }
 </style>
