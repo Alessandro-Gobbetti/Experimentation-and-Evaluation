@@ -205,7 +205,7 @@ export default defineComponent({
       },
       {
         question: "the tutorial",
-        answers: ["the-tutorial", "the-tutoria", "the-tutoral", "the-tutorail"],
+        answers: ["the-tutoria", "the-tutoral", "the-tutorial", "the-tutorail"],
         correct_answer: "the-tutorial",
         correct: false,
         time: 0,
@@ -304,6 +304,10 @@ export default defineComponent({
     this.questions.forEach((question) => {
       question.answers = this.shuffleArray(question.answers);
     });
+    // shuffle tutorial
+    this.tutorial.forEach((question) => {
+      question.answers = this.shuffleArray(question.answers);
+    });
   },
 
   beforeRouteLeave(to, from, next) {
@@ -377,10 +381,7 @@ export default defineComponent({
     },
 
     checkAnswer(index, answer) {
-      console.log(this.currentQuestion);
-      this.is_question = false;
-      if (this.currentQuestion < 0 || this.questions[this.currentQuestion - 1].time > 0)
-        return;
+      if (this.questions[this.currentQuestion - 1].time > 0) return;
       // stop timer
       this.stopTimer();
       // check answer
