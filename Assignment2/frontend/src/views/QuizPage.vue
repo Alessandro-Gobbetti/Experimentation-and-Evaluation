@@ -1,25 +1,115 @@
 <template>
   <div class="w-100 align-center text-center body">
-    <div v-if="currentQuestion === 0">
-      <h1>The quiz</h1>
-      <p class="text">
-        This is a quiz about camelCase and kebab-case coding style. You will be asked
-        {{ this.questions.length }} questions and you will have to choose the correct one
-        as fast as you can. We will measure the time you need to answer each question.
+    <div
+      v-if="currentQuestion === 0"
+      class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
+    >
+      <h1>The Experiment</h1>
+      <p class="w-50 text mb-2">
+        The aim of this experiment is to evaluate the readability of
+        <b>camelCase</b> and <b>kebab-case</b> coding styles.
       </p>
 
-      <p>
+      <p class="w-50 text mb-2">
+        You will be asked <b>{{ this.questions.length }} questions </b> and you will have
+        to choose the correct one as fast as you can, but without making mistakes. We will
+        <b>measure the time</b> you need to answer each question.
+      </p>
+
+      <p class="w-50 text mb-2">
         At the beginning a short phrase is shown to you, then, when you are ready, you can
-        proceed to the quesiton. 4 answers are shown to you, you have to choose the
+        proceed to the quesiton: 4 answers are shown to you, you have to choose the
         correct one (only one is correct).
       </p>
 
-      <v-btn variant="tonal" color="blue" @click="this.currentQuestion = 1">
-        Start quiz
+      <p class="w-50 text mb-2">
+        Since the results depend on your performance, we kindly ask you to focus during
+        the experiment and avoid any external distractions. For a better experience, we
+        recommend you to use a desktop computer.
+      </p>
+
+      <p class="w-50 text mb-2">
+        The experiment will take about 5 minutes. At the end of the experiment, you will
+        see a chart with the time you needed to answer each question.
+      </p>
+
+      <v-btn variant="tonal" color="blue" @click="this.currentQuestion = -2">
+        Start tutorial
       </v-btn>
     </div>
 
-    <!-- center text vertically -->
+    <!-- TUTORIAL -->
+    <div
+      v-else-if="currentQuestion <= 0"
+      class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
+    >
+      <div v-if="!is_question && !is_countdown">
+        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <v-btn variant="tonal" color="blue" @click="countdown()"> Answer </v-btn>
+      </div>
+
+      <div v-else-if="is_countdown">
+        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <h1 class="mb-8">{{ currentTime }}</h1>
+      </div>
+
+      <div v-else>
+        <h1 class="mb-8">{{ tutorial[Math.abs(currentQuestion) - 1].question }}</h1>
+        <!-- grid 2 by 2 -->
+        <div class="grid mb-8">
+          <v-btn
+            v-for="(answer, index) in tutorial[Math.abs(currentQuestion) - 1].answers"
+            :key="index"
+            :color="
+              tutorial[Math.abs(currentQuestion) - 1].time === 0
+                ? 'blue'
+                : tutorial[Math.abs(currentQuestion) - 1].correct_answer === answer
+                ? 'green'
+                : 'red'
+            "
+            variant="tonal"
+            size="x-large"
+            min-width="20vw"
+            min-height="15vh"
+            rounded
+            class="answer-button"
+            @click="checkTutorialAnswer(index, answer)"
+          >
+            {{ answer }}
+          </v-btn>
+        </div>
+        <v-btn
+          class="justify-end"
+          v-if="
+            tutorial[Math.abs(currentQuestion) - 1].time !== 0 && currentQuestion == -2
+          "
+          variant="tonal"
+          color="blue"
+          @click="
+            this.is_question = false;
+            this.currentQuestion = -1;
+          "
+        >
+          Next question
+        </v-btn>
+        <v-btn
+          class="justify-end"
+          v-else-if="
+            tutorial[Math.abs(currentQuestion) - 1].time !== 0 && currentQuestion == -1
+          "
+          variant="tonal"
+          color="blue"
+          @click="
+            this.is_question = false;
+            this.currentQuestion = 1;
+          "
+        >
+          Start quiz
+        </v-btn>
+      </div>
+    </div>
+
+    <!-- QUESTIONS -->
     <div
       v-else-if="currentQuestion <= questions.length"
       class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
@@ -106,27 +196,17 @@ export default defineComponent({
   data: () => ({
     tutorial: [
       {
-        question: "experimentation and evaluation",
-        answers: [
-          "experimentation-and-evaluation",
-          "experimentation-and-evalution",
-          "experimentation-and-evaluetion",
-          "experimemtation-and-evaluation",
-        ],
-        correct_answer: "experimentation-and-evaluation",
+        question: "the tutorial",
+        answers: ["theTutorial", "theTutoria", "theTutoral", "theTutorail"],
+        correct_answer: "theTutorial",
         correct: false,
         time: 0,
         is_kebab: true,
       },
       {
-        question: "experimentation and evaluation",
-        answers: [
-          "experimentationAndEvaluation",
-          "experimentationAndEvalution",
-          "experimentationAndEvaluetion",
-          "experimemtationAndEvaluation",
-        ],
-        correct_answer: "experimentationAndEvaluation",
+        question: "the tutorial",
+        answers: ["the-tutorial", "the-tutoria", "the-tutoral", "the-tutorail"],
+        correct_answer: "the-tutorial",
         correct: false,
         time: 0,
         is_kebab: false,
@@ -283,8 +363,24 @@ export default defineComponent({
       this.startTimer();
     },
 
+    checkTutorialAnswer(index, answer) {
+      if (this.tutorial[Math.abs(this.currentQuestion) - 1].time > 0) return;
+      // stop timer
+      this.stopTimer();
+      // check answer
+      this.tutorial[Math.abs(this.currentQuestion) - 1].correct =
+        this.tutorial[Math.abs(this.currentQuestion) - 1].correct_answer === answer;
+      // save time
+      this.tutorial[Math.abs(this.currentQuestion) - 1].time = this.currentTime;
+      // reset timer
+      this.resetTimer();
+    },
+
     checkAnswer(index, answer) {
-      if (this.questions[this.currentQuestion - 1].time > 0) return;
+      console.log(this.currentQuestion);
+      this.is_question = false;
+      if (this.currentQuestion < 0 || this.questions[this.currentQuestion - 1].time > 0)
+        return;
       // stop timer
       this.stopTimer();
       // check answer
