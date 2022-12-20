@@ -110,29 +110,151 @@
     </div>
 
     <!-- QUESTIONS -->
+
     <div
-      v-else-if="currentQuestion <= questions.length"
+      v-else-if="currentQuestion == 1"
+      class="h-100 w-100 align-center text-left d-flex flex-column mt-8"
+    >
+      <h1 class="mb-8">About you!</h1>
+      <div class="mb-8 w-50">
+        <h2>Gender:</h2>
+        <v-radio-group v-model="user_info.gender" row class="">
+          <v-radio label="Male" value="Male"></v-radio>
+          <v-radio label="Female" value="Female"></v-radio>
+          <v-radio label="Other" value="Other"></v-radio>
+        </v-radio-group>
+        <h2>Age:</h2>
+        <v-slider
+          v-model="user_info.age"
+          :ticks="{
+            0: '<18',
+            1: '18-25',
+            2: '26-35',
+            3: '36-45',
+            4: '46-55',
+            5: '56-65',
+            6: '>65',
+          }"
+          :max="6"
+          step="1"
+          show-ticks="always"
+          tick-size="3"
+          class="mb-6"
+        ></v-slider>
+        <!-- education_level -->
+        <h2>What is your education level?</h2>
+        <v-select
+          v-model="user_info.education_level"
+          :items="[
+            'None',
+            'Primary school',
+            'Secondary school',
+            'High school',
+            'Bachelor',
+            'Master',
+            'PhD',
+          ]"
+          label="Education level"
+          class="mb-6"
+          variant="solo"
+        ></v-select>
+        <!-- pc_usage_h_per_day -->
+        <h2>How many hours do you use a computer per day?</h2>
+        <v-slider
+          v-model="user_info.pc_usage_h_per_day"
+          :ticks="{
+            0: '0',
+            1: '1-2',
+            2: '3-4',
+            3: '5-6',
+            4: '7-8',
+            5: '9-10',
+            6: '>10',
+          }"
+          :max="6"
+          step="1"
+          show-ticks="always"
+          tick-size="3"
+          class="mb-6"
+        ></v-slider>
+        <!-- programming_experience -->
+        <h2>How many years of programming experience do you have?</h2>
+        <v-slider
+          v-model="user_info.programming_experience"
+          :ticks="{
+            0: 'None',
+            1: '1-2',
+            2: '3-5',
+            3: '6-10',
+            4: '11-15',
+            5: '16-20',
+            6: '>20',
+          }"
+          :max="6"
+          step="1"
+          show-ticks="always"
+          tick-size="3"
+          class="mb-6"
+        ></v-slider>
+
+        <h2>What do you use the most between camelCase and kebab-case?</h2>
+        <v-slider
+          v-model="user_info.knowledge_of_camel_kebab"
+          :ticks="{
+            0: 'camelCase',
+            1: 'None/Same',
+            2: 'kebab-case',
+          }"
+          :max="2"
+          step="1"
+          show-ticks="always"
+          tick-size="3"
+          class="mb-6"
+        ></v-slider>
+      </div>
+      <v-btn
+        v-if="
+          user_info.age !== undefined &&
+          user_info.gender !== undefined &&
+          user_info.education_level !== undefined &&
+          user_info.pc_usage_h_per_day !== undefined &&
+          user_info.programming_experience !== undefined
+        "
+        class="mb-16"
+        variant="tonal"
+        color="blue"
+        @click="nextQuestion()"
+      >
+        Next question
+      </v-btn>
+      <v-btn v-else class="mb-16" variant="tonal" color="blue" disabled>
+        Next question
+      </v-btn>
+    </div>
+
+    <div
+      v-else-if="currentQuestion - 2 < questions.length"
       class="h-100 w-100 align-center text-center d-flex flex-column pt-20"
     >
       <div v-if="!is_question && !is_countdown">
-        <h1 class="mb-8">{{ questions[currentQuestion - 1].question }}</h1>
+        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
         <v-btn variant="tonal" color="blue" @click="countdown()"> Answer </v-btn>
       </div>
       <div v-else-if="is_countdown">
-        <h1 class="mb-8">{{ questions[currentQuestion - 1].question }}</h1>
+        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
         <h1 class="mb-8">{{ currentTime }}</h1>
       </div>
       <div v-else>
-        <h1 class="mb-8">{{ questions[currentQuestion - 1].question }}</h1>
+        <h1 class="mb-8">{{ questions[currentQuestion - 2].question }}</h1>
         <!-- grid 2 by 2 -->
         <div class="grid mb-8">
           <v-btn
-            v-for="(answer, index) in questions[currentQuestion - 1].answers"
+            v-for="(answer, index) in questions[currentQuestion - 2].answers"
             :key="index"
             :color="
-              questions[currentQuestion - 1].time === 0
+              questions[currentQuestion - 2].time === 0
                 ? 'blue'
-                : questions[currentQuestion - 1].correct_answer === answer
+                : questions[currentQuestion - 2].correct_answer === answer
                 ? 'green'
                 : 'red'
             "
@@ -149,7 +271,7 @@
         </div>
         <v-btn
           class="justify-end"
-          v-if="questions[currentQuestion - 1].time !== 0"
+          v-if="questions[currentQuestion - 2].time !== 0"
           variant="tonal"
           color="blue"
           @click="nextQuestion()"
@@ -175,11 +297,6 @@
         ones.
       </p>
       <BarChart :data="getChartData()" class="w-75 h-75 mx-auto" />
-
-      <p class="text">
-        In order to submit your results, please send us an email to
-        <a href="mailto:alessandro.gobbetti@usi.ch">my email</a>
-      </p>
     </div>
   </div>
 </template>
@@ -212,6 +329,14 @@ export default defineComponent({
         is_kebab: false,
       },
     ],
+    user_info: {
+      gender: undefined,
+      age: 0,
+      education_level: undefined,
+      pc_usage_h_per_day: 0,
+      programming_experience: 0,
+      knowledge_of_camel_kebab: 1,
+    },
     questions: [
       {
         question: "copy and paste",
@@ -308,6 +433,8 @@ export default defineComponent({
     this.tutorial.forEach((question) => {
       question.answers = this.shuffleArray(question.answers);
     });
+    // shuffle questions
+    this.questions = this.shuffleArray(this.questions);
   },
 
   beforeRouteLeave(to, from, next) {
@@ -381,14 +508,14 @@ export default defineComponent({
     },
 
     checkAnswer(index, answer) {
-      if (this.questions[this.currentQuestion - 1].time > 0) return;
+      if (this.questions[this.currentQuestion - 2].time > 0) return;
       // stop timer
       this.stopTimer();
       // check answer
-      this.questions[this.currentQuestion - 1].correct =
-        this.questions[this.currentQuestion - 1].correct_answer === answer;
+      this.questions[this.currentQuestion - 2].correct =
+        this.questions[this.currentQuestion - 2].correct_answer === answer;
       // save time
-      this.questions[this.currentQuestion - 1].time = this.currentTime;
+      this.questions[this.currentQuestion - 2].time = this.currentTime;
       // reset timer
       this.resetTimer();
       // next question or end
@@ -402,15 +529,26 @@ export default defineComponent({
       this.currentQuestion++;
     },
 
+    questionsToJSON() {
+      let questions = {};
+      this.questions.forEach((question) => {
+        questions[question.question] = {
+          correct: question.correct,
+          time: question.time,
+          is_kebab: question.is_kebab,
+        };
+      });
+      return questions;
+    },
+
     submitQuiz() {
       emailjs
         .send(
           process.env.SERVICE_ID,
           process.env.TEMPLATE_ID,
           {
-            // TODO: properly send data
-            average_time: this.getAverageTime(),
-            questions: this.questions,
+            user_info: JSON.stringify(this.user_info, null, 2),
+            questions: JSON.stringify(this.questionsToJSON, null, 2),
           },
           process.env.USER_ID
         )
