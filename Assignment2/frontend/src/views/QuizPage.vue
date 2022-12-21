@@ -606,13 +606,15 @@ export default defineComponent({
     },
 
     questionsToJSON() {
-      let questions = {};
+      let questions = [];
       this.questions.forEach((question) => {
-        questions[question.question] = {
+        questions.push({
+          question: question.question,
+          correct_answer: question.correct_answer,
           correct: question.correct,
           time: question.time,
           is_kebab: question.is_kebab,
-        };
+        });
       });
       return questions;
     },
