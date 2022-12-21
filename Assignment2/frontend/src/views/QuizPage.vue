@@ -667,7 +667,7 @@ export default defineComponent({
     getChartData() {
       let lables = [];
       this.questions.forEach((question) => {
-        lables.push(question.question);
+        lables.push(question.correct_answer);
       });
 
       let data = [];
