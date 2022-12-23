@@ -20,6 +20,18 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  configureWebpack: {
+    module: {
+        rules: [ // proper handle of .mjs files
+            {
+                type: 'javascript/auto',
+                test: /\.mjs$/,
+                loader: 'babel-loader'
+            }
+        ]
+    }
+}
+  
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
   resolve: {
     extensions: [

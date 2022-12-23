@@ -52,6 +52,7 @@
       <v-btn class="ma-8" variant="tonal" color="blue" @click="this.currentQuestion = -2">
         Start tutorial
       </v-btn>
+      <ResultCharts :data="getChartData()" class="mt-16 w-100 mx-auto" />
     </div>
 
     <!-- TUTORIAL -->
@@ -322,11 +323,12 @@
 <script>
 import { defineComponent } from "vue";
 import BarChart from "@/components/BarChart.vue";
+import ResultCharts from "@/components/ResultCharts.vue";
 import emailjs from "emailjs-com";
 
 export default defineComponent({
   name: "quiz",
-  components: { BarChart },
+  components: { BarChart, ResultCharts },
 
   data: () => ({
     tutorial: [

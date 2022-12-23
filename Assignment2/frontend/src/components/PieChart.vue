@@ -1,29 +1,17 @@
 <template>
-  <Bar
-    id="my-chart-id"
-    :options="chartOptions"
-    :data="data"
-    :backgroundColor="data.backgroundColor"
-  />
+  <Pie id="my-chart-id" :options="chartOptions" :data="data" />
 </template>
 
 <script>
-import { Bar } from "vue-chartjs";
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-} from "chart.js";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
+import { Pie } from "vue-chartjs";
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
+ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 export default {
   name: "BarChart",
-  components: { Bar },
+  components: { Pie },
 
   props: {
     data: {
@@ -32,13 +20,18 @@ export default {
     },
   },
 
+  created() {
+    console.log(this.data);
+  },
+
   data() {
     return {
       chartOptions: {
-        responsive: true,
+        responsive: false,
+        maintainAspectRatio: true,
         plugins: {
           legend: {
-            display: false,
+            display: true,
           },
           datalabels: {
             color: "black",

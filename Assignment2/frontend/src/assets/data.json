@@ -1,0 +1,3757 @@
+[
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 3,
+      "education_level": "PhD",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 6,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 432,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 549,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 559,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 686,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 775,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": false,
+        "time": 727,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 610,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 596,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 829,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 604,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 607,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 848,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 863,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 422,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 5,
+      "education_level": "PhD",
+      "pc_usage_h_per_day": 6,
+      "programming_experience": 6,
+      "knowledge_of_camel_kebab": 2
+    },
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 884,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 478,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 407,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1200,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 666,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 880,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 827,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 638,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 679,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 537,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 394,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 417,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 532,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 779,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 5,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 276,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 315,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 296,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 392,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 905,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 422,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 390,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 388,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": false,
+        "time": 195,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 262,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 324,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 418,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 296,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 299,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 4,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 532,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 541,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 762,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 659,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 540,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 491,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 817,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 675,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 322,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 639,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 374,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 325,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 435,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 422,
+        "is_kebab": false
+      }
+    ]
+  },
+
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 4,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 5,
+      "knowledge_of_camel_kebab": 0
+    },
+
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 267,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": false,
+        "time": 429,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": false,
+        "time": 442,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 309,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 391,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 451,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 466,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 529,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 357,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 421,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 343,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 421,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 835,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 377,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 4,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 1,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1642,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 1546,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1185,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 1498,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1347,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 2463,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1275,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 850,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1915,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 806,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 914,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1278,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 806,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 1022,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 0
+    },
+
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 3190,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 1439,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 906,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 1078,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1158,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 862,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1032,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1397,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1034,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1058,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1901,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 2132,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": false,
+        "time": 1498,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 663,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 0,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 784,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 651,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 574,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 455,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 422,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 726,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 772,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 506,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": false,
+        "time": 534,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 503,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 813,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 672,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 703,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 686,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 325,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 622,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 424,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 409,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 441,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 696,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 489,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 312,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 275,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 368,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 322,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 565,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 483,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": false,
+        "time": 206,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 0
+    },
+
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 808,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 502,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": false,
+        "time": 517,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 530,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1144,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 663,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": false,
+        "time": 617,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": false,
+        "time": 460,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 702,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": false,
+        "time": 557,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 503,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 448,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 209,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 630,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Other",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 5,
+      "programming_experience": 6,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": false,
+        "time": 315,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 779,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 472,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 295,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 336,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 613,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 375,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 414,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 406,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 425,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": false,
+        "time": 287,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 484,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 258,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 441,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 277,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 400,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 281,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 383,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 319,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 188,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 194,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 460,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": false,
+        "time": 486,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 339,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 455,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": false,
+        "time": 251,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 515,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 395,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 3,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 648,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 614,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1073,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 559,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 731,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 661,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 782,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 308,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 356,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 505,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 453,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 408,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 380,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 430,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1406,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 834,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 994,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 859,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 2545,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 616,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1013,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1309,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 568,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 719,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 872,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1425,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 339,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 291,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 3,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": false,
+        "time": 346,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 425,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 388,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 301,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 699,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 566,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 709,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 302,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 527,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 982,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 589,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 674,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 455,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 475,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 5,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 1,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 2214,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 1717,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 985,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 3981,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 969,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1846,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1046,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1559,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1851,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": false,
+        "time": 2133,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 1476,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1905,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1605,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 1944,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 2,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 6,
+      "programming_experience": 4,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 596,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 746,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 678,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": false,
+        "time": 413,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1001,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 1434,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1446,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 721,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 530,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 530,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 819,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 361,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 741,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 849,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 2,
+      "education_level": "PhD",
+      "pc_usage_h_per_day": 5,
+      "programming_experience": 1,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 893,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 1115,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": false,
+        "time": 428,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 2138,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 725,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 846,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 1028,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 670,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 975,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 640,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 2040,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1340,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1475,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 978,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 5,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1195,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1483,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 2002,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 806,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 681,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 935,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 500,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 900,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 868,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 872,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 815,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1395,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 2696,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 704,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 2,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 3268,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 3424,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 1389,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1513,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 4019,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 5294,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 3098,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 1425,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 1398,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 2364,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1450,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1517,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 930,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 938,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 2
+    },
+
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 982,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 688,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 480,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 684,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 871,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 561,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 490,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 524,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 957,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1510,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1038,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 727,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 423,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 522,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 2,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 0,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1224,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1549,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 915,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 1058,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1342,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1181,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1358,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 642,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 798,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1097,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": false,
+        "time": 604,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1310,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 660,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1093,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 2,
+      "education_level": "PhD",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 753,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": false,
+        "time": 688,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 910,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 977,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 802,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": false,
+        "time": 784,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1342,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 770,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1280,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 539,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1540,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 955,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1115,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 675,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 6,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 1,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 995,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1571,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 860,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 982,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": false,
+        "time": 974,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 969,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 823,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 749,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 926,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 1693,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1068,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 623,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1026,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 860,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 6,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 0,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1773,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 778,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 1592,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1861,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 1075,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 1432,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": false,
+        "time": 697,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 631,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 2022,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 980,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 746,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 439,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1733,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 1242,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 2240,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 750,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 1368,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 4455,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 867,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1115,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1219,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 858,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 472,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1038,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1340,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1411,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1698,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1569,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 1,
+      "programming_experience": 1,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 702,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 525,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 347,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 390,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 582,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 331,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 484,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 503,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": false,
+        "time": 274,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 484,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 422,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 449,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 281,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 461,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1148,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 833,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 306,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 1147,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 465,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 584,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 955,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 277,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 356,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 349,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 566,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 509,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 636,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 229,
+        "is_kebab": false
+      }
+    ]
+  },
+
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 1185,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1676,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 830,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 664,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 429,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1157,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 711,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 631,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 632,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 539,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 630,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 450,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": false,
+        "time": 423,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 351,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Bachelor",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 2,
+      "knowledge_of_camel_kebab": 0
+    },
+    "answers": [
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 3242,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 1566,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 3737,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 802,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 759,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 619,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1841,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 587,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 511,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 260,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": false,
+        "time": 665,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 554,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 638,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 442,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 5,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 785,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1390,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": false,
+        "time": 1045,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 1620,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1721,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 1911,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 753,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 1359,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 705,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 906,
+        "is_kebab": false
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 497,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 1302,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 773,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 1557,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 1,
+      "education_level": "Secondary school",
+      "pc_usage_h_per_day": 3,
+      "programming_experience": 3,
+      "knowledge_of_camel_kebab": 0
+    },
+
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 271,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": false,
+        "time": 231,
+        "is_kebab": true
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 304,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 271,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 165,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 168,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 221,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 183,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 283,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": false,
+        "time": 168,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 164,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 205,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 114,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 228,
+        "is_kebab": true
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Female",
+      "age": 1,
+      "education_level": "High school",
+      "pc_usage_h_per_day": 2,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+
+    "answers": [
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 913,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 419,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1864,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 508,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 918,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 380,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 700,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": true,
+        "time": 1472,
+        "is_kebab": false
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 709,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 950,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 1229,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 1183,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": true,
+        "time": 470,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 732,
+        "is_kebab": false
+      }
+    ]
+  },
+  {
+    "user_info": {
+      "gender": "Male",
+      "age": 2,
+      "education_level": "Master",
+      "pc_usage_h_per_day": 4,
+      "programming_experience": 0,
+      "knowledge_of_camel_kebab": 1
+    },
+    "answers": [
+      {
+        "question": "do not use",
+        "correct_answer": "doNotUse",
+        "correct": true,
+        "time": 1357,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retake-the-exam",
+        "correct": true,
+        "time": 474,
+        "is_kebab": true
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "if-you-want-to",
+        "correct": true,
+        "time": 550,
+        "is_kebab": true
+      },
+      {
+        "question": "do not use",
+        "correct_answer": "do-not-use",
+        "correct": true,
+        "time": 473,
+        "is_kebab": true
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "do-something-now",
+        "correct": false,
+        "time": 912,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copyAndPaste",
+        "correct": true,
+        "time": 888,
+        "is_kebab": false
+      },
+      {
+        "question": "do something now",
+        "correct_answer": "doSomethingNow",
+        "correct": true,
+        "time": 761,
+        "is_kebab": false
+      },
+      {
+        "question": "if you want to",
+        "correct_answer": "ifYouWantTo",
+        "correct": true,
+        "time": 915,
+        "is_kebab": false
+      },
+      {
+        "question": "retake the exam",
+        "correct_answer": "retakeTheExam",
+        "correct": false,
+        "time": 538,
+        "is_kebab": false
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "hello-world",
+        "correct": true,
+        "time": 794,
+        "is_kebab": true
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "addEventListener",
+        "correct": true,
+        "time": 1352,
+        "is_kebab": false
+      },
+      {
+        "question": "add event listener",
+        "correct_answer": "add-event-listener",
+        "correct": true,
+        "time": 833,
+        "is_kebab": true
+      },
+      {
+        "question": "copy and paste",
+        "correct_answer": "copy-and-paste",
+        "correct": true,
+        "time": 486,
+        "is_kebab": true
+      },
+      {
+        "question": "hello world",
+        "correct_answer": "helloWorld",
+        "correct": true,
+        "time": 754,
+        "is_kebab": false
+      }
+    ]
+  }
+]
